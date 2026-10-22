@@ -1,3 +1,5 @@
+<img src="terminal.svg" width="700">
+
 # 👨‍💻 Meet Kothari
 
 ## 🚀 About Me
