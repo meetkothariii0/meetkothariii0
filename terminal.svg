@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="240" viewBox="0 0 700 240">
+  <defs>
+    <clipPath id="c1"><rect class="r1" x="40" y="55" width="0" height="35"/></clipPath>
+    <clipPath id="c2"><rect class="r2" x="40" y="90" width="0" height="35"/></clipPath>
+    <clipPath id="c3"><rect class="r3" x="40" y="125" width="0" height="35"/></clipPath>
+    <clipPath id="c4"><rect class="r4" x="40" y="160" width="0" height="35"/></clipPath>
+  </defs>
+  <style>
+    text { font: 20px monospace; fill: #c9d1d9; }
+    .green { fill: #3fb950; }
+    .blue { fill: #58a6ff; }
+    .border { fill: none; stroke: #58a6ff; stroke-width: 2; animation: glow 2.5s ease-in-out infinite; }
+    .cursor { fill: #58a6ff; animation: blink 1s steps(1) infinite; }
+    .r1 { animation: t1 0.8s steps(8) 0.5s forwards; }
+    .r2 { animation: t2 1.5s steps(19) 1.6s forwards; }
+    .r3 { animation: t3 1.2s steps(16) 3.4s forwards; }
+    .r4 { animation: t4 1.6s steps(21) 4.9s forwards; }
+    @keyframes t1 { to { width: 96px; } }
+    @keyframes t2 { to { width: 228px; } }
+    @keyframes t3 { to { width: 192px; } }
+    @keyframes t4 { to { width: 252px; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes glow { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
+  </style>
+
+  <rect width="700" height="240" rx="12" fill="#0d1117"/>
+  <rect class="border" x="1" y="1" width="698" height="238" rx="12"/>
+
+  <circle cx="30" cy="25" r="7" fill="#ff5f56"/>
+  <circle cx="53" cy="25" r="7" fill="#ffbd2e"/>
+  <circle cx="76" cy="25" r="7" fill="#27c93f"/>
+
+  <g clip-path="url(#c1)"><text x="40" y="80" textLength="96" lengthAdjust="spacing"><tspan class="green">$</tspan> whoami</text></g>
+  <g clip-path="url(#c2)"><text x="40" y="115" textLength="228" lengthAdjust="spacing"><tspan class="blue">&gt;</tspan> Hi, I'm YOUR NAME</text></g>
+  <g clip-path="url(#c3)"><text x="40" y="150" textLength="192" lengthAdjust="spacing"><tspan class="green">$</tspan> cat skills.txt</text></g>
+  <g clip-path="url(#c4)"><text x="40" y="185"
